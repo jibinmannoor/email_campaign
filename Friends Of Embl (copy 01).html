@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=320, initial-scale=1">
+      
+        <title>Email Template</title>
+        
+    <style type="text/css">
+		#outlook a{
+			padding:0;
+		}
+		.ReadMsgBody{
+			width:100%;
+		}
+		.ExternalClass{
+			width:100%;
+		}
+		.ExternalClass,.ExternalClass p,.ExternalClass span,.ExternalClass font,.ExternalClass td,.ExternalClass div{
+			line-height:100%;
+		}
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+		}
+		table,td{
+			mso-table-lspace:0pt;
+			mso-table-rspace:0pt;
+		}
+		img{
+			-ms-interpolation-mode:bicubic;
+		}
+		body{
+			margin:0;
+			padding:0;
+		}
+		img{
+			border:0;
+			height:auto;
+			line-height:100%;
+			outline:none;
+			text-decoration:none;
+		}
+		table{
+			border-collapse:collapse !important;
+		}
+		body,#bodyTable,#bodyCell{
+			height:100% !important;
+			margin:0;
+			padding:0;
+			width:100% !important;
+		}
+		#bodyCell{
+			padding:20px;
+		}
+		#templateContainer{
+			width:600px;
+		}
+		body,#bodyTable{
+			background-color:#F4F4F4;
+		}
+		h1,h2,h3,h4{
+			display:block;
+			font-family:Georgia, Times New Roman, Times, serif;
+			font-size:28px;
+			font-style:italic;
+			font-weight:normal;
+			line-height:115%;
+			letter-spacing:normal;
+			margin-top:0;
+			margin-right:0;
+			margin-bottom:6px;
+			margin-left:0;
+			text-align:left;
+		}
+		.orange h1,.orange h2,.orange h3,.orange h4.orange a,.orange a:link,.orange a:visited,.orange a .yshortcuts{
+			color:#F1833D !important;
+		}
+		.yellow h1,.yellow h2,.yellow h3,.yellow h4.yellow a,.yellow a:link,.yellow a:visited,.yellow a .yshortcuts{
+			color:#E9CD56 !important;
+		}
+		.blue h1,.blue h2,.blue h3,.blue h4.blue a,.blue a:link,.blue a:visited,.blue a .yshortcuts{
+			color:#23B9D6 !important;
+		}
+		.green h1,.green h2,.green h3,.green h4.green a,.green a:link,.green a:visited,.green a .yshortcuts{
+			color:#A8C813 !important;
+		}
+		.greenblue h1,.greenblue h2,.greenblue h3,.greenblue h4.greenblue a,.greenblue a:link,.greenblue a:visited,.greenblue a .yshortcuts{
+			color:#007C82 !important;
+		}
+		.sectiondividerOrange{
+			background-color:#F1833D;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		.sectiondividerYellow{
+			background-color:#E9CD56;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		.sectiondividerBlue{
+			background-color:#23B9D6;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		.sectiondividerGreen{
+			background-color:#A8C813;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		.sectiondividerGreenblue{
+			background-color:#007C82;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		#templatePreheader{
+			background-color:#292929;
+			color:#fff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			text-transform:uppercase;
+		}
+		.preheaderContent{
+			color:#ffffff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:14px;
+			line-height:125%;
+			text-align:left;
+		}
+		.preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts{
+			color:#ffffff;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		.preheaderContent a:hover{
+			color:#018084;
+		}
+		#templateHeader{
+			background-color:#ffffff;
+		}
+		.headerContent{
+			color:#018084;
+			font-family:Georgia, Times New Roman, Times, serif;
+			font-size:14px;
+			font-weight:normal;
+			line-height:100%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:0;
+			padding-left:0;
+			text-align:left;
+			vertical-align:middle;
+		}
+		.headerContent h1{
+			color:#018084 !important;
+			font-size:14px;
+			font-style:normal;
+			padding-bottom:0;
+			margin-bottom:0;
+		}
+		.headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts{
+			color:#EB4102;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		#headerImage{
+			height:auto;
+			max-width:270px;
+		}
+		.templateColumnContainer{
+			width:300px;
+		}
+		.templateColumnContainer.right{
+			background-color:#F7F7F7;
+		}
+		.templateColumns{
+			background-color:#ffffff;
+		}
+		.columnContent{
+			color:#3F3E37;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:15px;
+			line-height:150%;
+			padding-top:0;
+			padding-right:0;
+			padding-bottom:20px;
+			padding-left:0;
+			text-align:left;
+		}
+		.columnContent a:link,.columnContent a:visited,.columnContent a .yshortcuts{
+			font-size:12px;
+			font-weight:normal;
+			text-decoration:none;
+			text-transform:uppercase;
+		}
+		.columnContent a:hover{
+			color:#3F3E37 !important;
+		}
+		.columnContent img{
+			display:inline;
+			height:auto;
+			max-width:260px;
+		}
+		.columnContent span{
+			font-size:12px;
+			text-transform:uppercase;
+			margin:0 0 10px 0;
+			display:block;
+		}
+		.columnContent p{
+			margin:0 0 15px 0;
+		}
+		#templateFooter{
+			background-color:#808F90;
+			width:600px;
+		}
+		.footerContent{
+			color:#ffffff;
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:15px;
+			line-height:150%;
+			padding-top:20px;
+			padding-right:30px;
+			padding-bottom:20px;
+			padding-left:30px;
+			text-align:left;
+		}
+		.footerContent h2{
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:12px;
+			font-style:normal;
+			font-weight:normal;
+			text-transform:uppercase;
+		}
+		.footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts,.footerContent a span{
+			color:#ffffff;
+			font-weight:normal;
+			text-decoration:underline;
+		}
+		.footerContent a:hover{
+			color:#3F3E37 !important;
+		}
+		.subFooter{
+			background:#292929;
+			padding:15px 30px;
+			font-size:14px;
+		}
+		.subFooter span{
+			margin-right:40px;
+		}
+		ul.social{
+			padding:0;
+			margin-left:-5px;
+			list-style:none;
+		}
+		ul.social li{
+			display:inline-block;
+			margin:0 10px 10px 0;
+			position:relative;
+			height:30px;
+			width:30px;
+		}
+		ul.social a{
+			display:block;
+			height:30px;
+			width:30px;
+			position:absolute;
+			overflow:hidden;
+		}
+		ul.social a img{
+			width:100%;
+			position:absolute;
+			top:0;
+		}
+		ul.social a:hover img{
+			bottom:0;
+			top:inherit;
+		}
+	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		body{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#bodyCell{
+			padding:1px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateContainer{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#templateFooter{
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		#headerImage{
+			height:auto !important;
+			width:83.5% !important;
+			padding:0px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.headerContent{
+			display:block !important;
+			width:100% !important;
+			padding:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.templateColumnContainer{
+			display:block !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.footerContent{
+			width:50% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.columnImage{
+			height:auto !important;
+			max-width:none !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.footerContent.col{
+			display:block !important;
+			width:100% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.subFooter span{
+			width:100% !important;
+			margin:0 !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		input.text{
+			margin-bottom:10px !important;
+			width:90% !important;
+			padding:7px 5% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		input.button{
+			width:25% !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		.no-mobile{
+			display:none !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table.table,td.cell{
+			width:300px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table.promotable,td.promocell{
+			width:325px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=table],td[class=cell]{
+			width:300px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table[class=promotable],td[class=promocell]{
+			width:325px !important;
+		}
+
+}</style>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"405188",ustr:"",originlat:"0",clientrtt:"47",ghostip:"92.123.225.177",ipv6:false,pct:"10",clientip:"84.59.115.192",requestid:"9024e6e",region:"25168",protocol:"h2",blver:13,akM:"x",akN:"ae",akTT:"O",akTX:"1",akTI:"9024e6e",ai:"287436",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+    	<center>
+        
+        	<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+            	<tr>
+                	<td align="center" valign="top" id="bodyCell">
+                    
+                    	<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <!-- // Begin Template Preheader \\ -->
+                                
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+                                        <tr>
+                                            <td valign="top" width="100%" class="preheaderContent" style="padding-top:12px; padding-right:30px; padding-bottom:12px; padding-left:30px;">
+                                                Email not displaying correctly? <a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                      <!-- // end Template Preheader \\ -->
+                                
+                                </td>
+                            </tr>
+                              <!-- // begening of Template Header \\ -->
+                        	<tr>
+                            	<td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td align="center" valign="top">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                        <td valign="top" class="headerContent" style="font-size: 0px; padding-top:0; padding-right:50px; padding-bottom:0; padding-left:30px;"><a href="http://news.embl.de/"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/a3448803-5e1c-41ef-a31f-29dfe1dae406.png?_ga=1.264829903.1375082309.1474206692" alt="news.embl.de" width="270px" id="headerImage" style="max-width:270px;"></a>
+                                                        </td>
+                                                        <td valign="top" class="headerContent no-mobile" style="padding-top:10px; padding-right:30px; padding-bottom:0; padding-left:30px;">
+                                                        	<h1>News from the European <br>
+ Molecular Biology Laboratory </h1>
+                                            			</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>                                                                                                                     	                                            <td valign="top" class="sectiondividerOrange" style="text-align: right; padding-top:15px; padding-right:40px; padding-bottom:12px; padding-left:20p;">*|DATE:j F Y|*
+                                            	</td>
+                                        </tr>  
+                                        </table>
+                                           
+                                        
+                                        </td>
+                                        </tr>
+                                          <!-- // end of Template Header \\ -->
+                                            <!-- // begening of Template body \\ -->
+                                            <tr>
+                                            <td>
+                                           
+                                        <table mc:repeatable border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns orange">
+                                       
+                                      
+                                                <tr>
+                                                    <td align="center" valign="top" class="templateColumnContainer" style="padding-top:0;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                 <td valign="top" class="columnContent" style="padding-right:30px; padding-left:30px; padding-top: 20px;">
+                                   
+                                            	  <h2 mc:edit="orange_tittle">Introduction to this Issue</h2>
+                                                <p mc:edit="orange_content">What better to kick off the new year than for twelve of our industry&rsquo;s most reveared scientists to come and tour our campus and teach us all kinds of stuff about brain chemistry and this is kind of a long story that is super interesting. You might even find yourself reading more and more and more of it.</p><span mc:edit="orange aut">Chlo&euml; Cross, Digital Editor</span>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                        </td>
+                                        </tr>
+                                       </table>
+                                       <div>
+                                        
+                                        <!-- // Begin of orange devider \\ -->
+                                        <div mc:repeatable mc:variant="Orange Devider">
+                                        
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="sectiondividerOrange">
+                                        <tr>
+                                                    <td valign="top" style="padding-top:15px; padding-right:30px; padding-bottom:12px; padding-left:30px;">
+                                                       <div mc:edit="devider"> Section divider</div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            </div>
+                                             <!-- // end of orange devider \\ -->
+                                             
+                                           
+                                          
+                                          
+                                            <!-- // begin of Orange content with one column \\ -->
+                                            
+                                            
+                                                <!-- // end of Orange content with one column \\ -->
+                                                 
+                                              
+                                                 <!-- // begin of Orange content with two column with single image  \\ -->
+                                                 
+                                                 <!-- // end of Orange content with two column with single image  \\ -->
+                                                   <!-- // begin of Orange content with two column  \\ -->
+                                                
+                                                
+                                            <!-- // end of Orange content with two column  \\ -->
+                                             <!-- // Begin of yellow devider \\ -->
+                                             
+                                            <!-- // end of yellow devider \\ -->
+                                            <!-- // begin of Yellow content with one column  \\ -->
+                                            
+                                            <!-- //  end of Yellow content with one column  \\ -->
+                                            <!-- //  begin of Yellow content with two column  \\ -->
+                                            
+                                            <!-- //  end of Yellow content with two column  \\ -->
+                                            <!-- //  begin of Yellow content with two column with single image  \\ -->
+                                            
+                                            <!-- //  end of Yellow content with two column with single image  \\ -->
+                                             <!-- // Begin of blue devider \\ -->
+                                             
+                                            <!-- // end of blue devider \\ -->
+                                            <!-- //  begin of Blue content with one column  \\ -->
+                                           
+                                            
+                                            <!-- //  end of Blue content with one column  \\ -->
+                                            <!-- //  begin of Blue content with two column  \\ -->
+                                            
+                                          <!-- //  end of Blue content with two column  \\ -->
+                                          <!-- //  begin of Blue content with two column with single image  \\ -->
+                                            
+                                          <!-- //  end of Blue content with two column with single image  \\ -->
+                                            <!-- // Begin of green devider \\ -->
+                                              
+                                            
+                                            <!-- // end of green devider \\ -->
+                                           <!-- //  begin of Green content with one column  \\ -->
+                                            
+                                            <!-- //  end of Green content with one column  \\ -->
+                                            <!-- //  begin of Green content with two column  \\ -->
+                                            
+                                             <!-- //  end of Green content with two column  \\ -->
+                                              <!-- //  begin of Green content with two column with single image  \\ -->
+                                               
+                                            
+                                               <!-- //  end of Green content with two column with single image  \\ -->
+                                                 <!-- // Begin of greenblue devider \\ -->
+                                            
+                                            <!-- // end of greenblue devider \\ -->
+                                               <!-- //  begin of Greenblue content with one column  \\ -->
+                                            
+                                            
+                                            <!-- //  end of Greenblue content with one column  \\ -->
+                                            <!-- //  begin of Greenblue content with two column  \\ -->
+                                            
+                                       <!-- //  end of Greenblue content with two column  \\ -->
+                                       <!-- //  begin of Greenblue content with two column with single image  \\ -->
+                                              
+                                        </div>
+                                       
+                                       <!-- //  end of Greenblue content with two column with single image  \\ -->
+                                       <!-- //  begin of footer  \\ -->
+                                	                                                                  
+                                    <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateFooter">
+                                        
+                                        
+                                        <tr>
+                                      
+                                        	<td colspan="2">
+                                            	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                	<tr>
+                                                    	<td valign="top" width="300" style="padding-right:30px; padding-left:30px;" class="footerContent col">
+                                            				<h2>Follow Us</h2>
+                                                            <ul class="social">
+                                                                <li><a href="http://www.facebook.com/embl.org"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/692e1d5a-f607-4556-a3f5-07b1677c4d6f.png" alt="Facebook"></a></li>
+                                                                <li><a href="http://twitter.com/emblorg"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/26fe959c-5645-41ef-b621-57b5a8dcf0b7.png" alt="Twitter"></a></li>
+<li><a href="http://linkedin.com/company/embl"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/f53298d0-884b-49d5-af59-55dce283ddf1.png" alt="Google Plus"></a></li>
+<li><a href="https://www.youtube.com/emblmedia"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/13419976-5c00-4492-9292-a5fa51e1ada4.png" alt="Youtube"></a></li>
+                                                                <li><a href="http://plus.google.com/+EMBLorg"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/3e0287e7-3e12-4f98-9b98-a709eac0f798.png" alt="Google Plus"></a></li></ul></td>
+                                                                <td valign="top" width="300" style="padding-right:60px; padding-left:20px;" class="footerContent">
+                                                                <table>
+                                                                <tr>
+                                                                <td>
+                                                           <h2 mc:edit="fot">FRIENDS OF EMBL CONTACT</h2> 
+                                                           <div mc:edit="footercontetn1">Barbara Solich<br></div>
+                                                           </td>
+                                                           </tr>
+                                                           </table>
+
+
+
+                                                            
+                                                          
+                                                         
+                                                        </td>
+                                                       
+                                                      
+                                                                                                                                                                            
+                                                    </tr>
+                                                     <tr>
+                                            <td colspan="2" valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer12"></td>
+                                        </tr>
+                                                </table>
+                                            
+                                        </td></tr>
+                                        <tr>
+                                            <td colspan="2" valign="top" class="footerContent" style="padding-top:0; padding-right:35px;" mc:edit="footer">
+                                            	This email was sent to *|EMAIL|*. This e-newsletter is sent to all EMBL staff – if you do not wish to receive monthly updates, <a href="*|UNSUB|*">Unsubscribe from this list.</a><br>
+*|REWARDS|* 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                          <td width="85% valign=" top="" class="footerContent subFooter">
+                                            	<span>© *|DATE:Y|* European Molecular Biology Laboratory</span>
+                                                </td>
+                                            <td width="15% valign=" top="" class="footerContent subFooter"><a href="http://www.embl.de/"><img src="https://gallery.mailchimp.com/791353bbdaeef4512a85a3cfb/images/a371debd-374a-4578-8a96-63c1430c4054.png" alt="www.embl.de" width="143" height="58" align="right"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                
+                            </td></tr>
+                        </table>
+                      
+                    
+           
+        </td></tr></table></center>
+    </body>
+</html>
